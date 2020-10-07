@@ -21,3 +21,6 @@ HEADERS  += mainwindow.h \
     cubicequationcardano.h
 
 FORMS    += mainwindow.ui
+
+DISTFILES += \
+    CubicEquationSolver.zip
