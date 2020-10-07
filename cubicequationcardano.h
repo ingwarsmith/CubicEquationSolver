@@ -3,8 +3,6 @@
 
 #include <QVector>
 
-
-
 class CubicEquationCardano
 {
     // Класс, реализующий решение кубического уравнения методом Кардано (вычисляются только действительные корни).
@@ -22,8 +20,7 @@ class CubicEquationCardano
 public:
     CubicEquationCardano(double koeff_B, double koeff_C, double koeff_D, double koeff_A = 1.0);
     bool            isRootsAreValid();
-    QVector<double> returnRealRoots();
-    void            printRealRootsInStdOut();
+    QVector<double> &&returnRealRoots();
 
 private:
     QVector<double> roots;
