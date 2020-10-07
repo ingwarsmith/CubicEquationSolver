@@ -2,12 +2,12 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QMessageBox>
-#include "cubicequationcardano.h"
 
 namespace Ui {
 class MainWindow;
 }
+
+class CubicEquationCardano; // предварительное объявление
 
 class MainWindow : public QMainWindow
 {
@@ -16,9 +16,6 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
-    
-private slots:
-    void on_btnCalc_clicked();
 
 private:
     Ui::MainWindow *ui;
